@@ -1,5 +1,5 @@
 --COVID DATA : https://ourworldindata.org/covid-deaths 
--- Two seperate data sets are created from the original data set above.
+--Two seperate data sets(CovidDeaths and CovidVaccinations) are created from the original data set above(owid-covid-data).
 
 select * from PortfolioProject..CovidDeaths order by 3,4
 
