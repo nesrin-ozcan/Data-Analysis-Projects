@@ -1,3 +1,5 @@
+--COVID DATA : https://ourworldindata.org/covid-deaths
+
 select * from PortfolioProject..CovidDeaths order by 3,4
 
 select * from PortfolioProject..CovidVaccinations order by 3,4
@@ -80,7 +82,7 @@ Join PortfolioProject..CovidVaccinations V
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
 
---CREATE V›EW
+--CREATE V√ùEW
 go
 Create View PercentPopulationVaccinated2
 as
