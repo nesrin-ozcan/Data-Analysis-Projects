@@ -11,7 +11,7 @@ select location,date,total_cases,new_cases,total_deaths,population from Portfoli
 select location,date,total_cases,total_deaths,(cast(total_deaths as float)/cast(total_cases as float))*100 
 as DeathPercentage from PortfolioProject..CovidDeaths where location like '%turkey%' order by 1,2
 
---PERCENTAGE OF POPULATION GOT COVID
+--PERCENTAGE OF POPULATION THAT GOT COVID
 select location,date,total_cases,population,(cast(total_deaths as float)/cast(population as float))*100 
 as DeathPercentage from PortfolioProject..CovidDeaths where location like '%turkey%' order by 1,2
 
@@ -83,7 +83,7 @@ Join PortfolioProject..CovidVaccinations V
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
 
---CREATE VÝEW
+--CREATE VIEW
 go
 Create View PercentPopulationVaccinated2
 as
